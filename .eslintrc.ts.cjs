@@ -1,7 +1,6 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 'latest',
-  },
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint/eslint-plugin'],
   root: true,
   rules: {
     'arrow-body-style': 'warn',
@@ -19,6 +18,7 @@ module.exports = {
     'object-curly-spacing': ['warn', 'always', { objectsInObjects: false }],
     'quotes': ['warn', 'single', { allowTemplateLiterals: true, avoidEscape: true }],
     'semi': ['warn', 'never'],
+    'sort-vars': 'warn',
     'space-before-blocks': 'warn',
     'template-curly-spacing': ['warn', 'never'],
   },
